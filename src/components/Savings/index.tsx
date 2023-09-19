@@ -1,6 +1,11 @@
 import { Text, View } from "react-native";
 import { Button } from "../Button";
-import { Entypo, MaterialCommunityIcons, FontAwesome } from "@expo/vector-icons";
+import {
+  Entypo,
+  MaterialCommunityIcons,
+  FontAwesome,
+} from "@expo/vector-icons";
+import { Point } from "../Point";
 
 export function Savings() {
   return (
@@ -23,7 +28,11 @@ export function Savings() {
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-            <MaterialCommunityIcons name="piggy-bank-outline" size={28} color="#333333" />
+            <MaterialCommunityIcons
+              name="piggy-bank-outline"
+              size={28}
+              color="#333333"
+            />
             <Text style={{ fontSize: 16 }}>Poupança</Text>
           </View>
           <Entypo name="chevron-thin-down" size={24} color="#333333" />
@@ -70,6 +79,54 @@ export function Savings() {
           Faça o seu dinheiro render mais.
         </Text>
       </Button>
+      <Button
+        style={{
+          width: "100%",
+          backgroundColor: "#fff",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          padding: 6,
+        }}
+      >
+        <MaterialCommunityIcons
+          name="sack"
+          size={52}
+          color="#ec0000"
+          style={{ padding: 6 }}
+        />
+        <View style={{ padding: 6 }}>
+          <Text
+            style={{
+              fontSize: 14,
+              color: "#6d6d6d",
+            }}
+          >
+            Dá pra fazer muita coisa com R$ 1
+          </Text>
+          <Text
+            style={{
+              fontSize: 14,
+              color: "#6d6d6d",
+            }}
+          >
+            milhão. e, pra concorrer, contrate
+          </Text>
+          <Text
+            style={{
+              fontSize: 14,
+              color: "#6d6d6d",
+            }}
+          >
+            um DinDin.
+          </Text>
+        </View>
+      </Button>
+      <View style={{ alignSelf: "center", flexDirection: "row", gap: 8, alignItems: "center" }}>
+        <Point color={"#ec0000"} size={10} />
+        <Point color={"#c2c2c2"} size={6} />
+        <Point color={"#c2c2c2"} size={6} />
+      </View>
     </View>
   );
 }
