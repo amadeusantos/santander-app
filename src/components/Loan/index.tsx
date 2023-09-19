@@ -21,10 +21,10 @@ export function Loan() {
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-            <FontAwesome5 name="hand-holding-usd" size={28} color="black" />
+            <FontAwesome5 name="hand-holding-usd" size={28} color="#333333" />
             <Text style={{ fontSize: 16 }}>Empréstimos</Text>
           </View>
-          <Entypo name="chevron-thin-down" size={24} color="black" />
+          <Entypo name="chevron-thin-down" size={24} color="#333333" />
         </View>
         <Text style={{ paddingLeft: 16, fontSize: 14, paddingBottom: 12, color: "#6d6d6d" }}>Simule Agora</Text>
       </Button>

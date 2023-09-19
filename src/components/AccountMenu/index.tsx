@@ -58,7 +58,7 @@ export function AccountMenu() {
             />
             <Text style={{ fontSize: 16 }}>Saldo disponivel</Text>
           </View>
-          <Entypo name="chevron-thin-down" size={24} color="black" />
+          <Entypo name="chevron-thin-down" size={24} color="#333333" />
         </Button>
         <View
           style={{

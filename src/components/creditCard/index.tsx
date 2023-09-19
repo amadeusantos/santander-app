@@ -26,10 +26,10 @@ export function CreditCard() {
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-            <AntDesign name="creditcard" size={24} color="black" />
-            <Text style={{ fontSize: 16 }}>Saldo disponivel</Text>
+            <AntDesign name="creditcard" size={24} color="#333333" />
+            <Text style={{ fontSize: 16 }}>Meus cartões</Text>
           </View>
-          <Entypo name="chevron-thin-down" size={24} color="black" />
+          <Entypo name="chevron-thin-down" size={24} color="#333333" />
         </Button>
         <Button
           style={{

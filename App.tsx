@@ -13,7 +13,7 @@ export default function App() {
     <View>
       <StatusBar style="inverted" backgroundColor="#ec0000" />
       <TopBar />
-      <ScrollView style={{ paddingTop: "20%" }}>
+      <ScrollView style={{ paddingTop: "20%", backgroundColor: "#fcfcff" }}>
         <AccountMenu />
         <CreditCard />
         <Loan />
