@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { TopBar } from "./src/components/TopBar";
+import { AccountMenu } from "./src/components/AccountMenu";
+import { CreditCard } from "./src/components/creditCard";
+import { Loan } from "./src/components/Loan";
+import { Savings } from "./src/components/Savings";
+import { MyBanks } from "./src/components/MyBanks";
+import { Help } from "./src/components/Help";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <StatusBar style="inverted" backgroundColor="#ec0000" />
+      <TopBar />
+      <ScrollView style={{ paddingTop: "20%" }}>
+        <AccountMenu />
+        <CreditCard />
+        <Loan />
+        <Savings />
+        <MyBanks />
+        <Help />
+        <View style={{ height: 128 }}></View>
+      </ScrollView>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
