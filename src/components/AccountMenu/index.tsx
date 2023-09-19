@@ -7,7 +7,13 @@ import Pix from "../../assets/images/pix.png";
 import Transferir from "../../assets/images/transferir.png";
 import Pagar from "../../assets/images/pagar.png";
 
-export function AccountMenu() {
+interface AccountMenuProps {
+  name: string;
+  account: string;
+  agency: string;
+}
+
+export function AccountMenu({name, account, agency }: AccountMenuProps) {
   return (
     <View>
       <View
@@ -17,9 +23,9 @@ export function AccountMenu() {
           paddingHorizontal: 12,
         }}
       >
-        <Text style={{ color: "#fff", fontSize: 18 }}>Olá, Mundo!</Text>
+        <Text style={{ color: "#fff", fontSize: 18 }}>Olá, {name}</Text>
         <Text style={{ color: "#fff", fontSize: 18, fontWeight: "bold" }}>
-          Ag 0000 Co 00000-0
+          Ag {agency} Co {account}
         </Text>
       </View>
       <View style={{ alignItems: "center", gap: 40 }}>

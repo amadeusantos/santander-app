@@ -14,7 +14,7 @@ export default function App() {
       <StatusBar style="inverted" backgroundColor="#ec0000" />
       <TopBar />
       <ScrollView style={{ paddingTop: "20%", backgroundColor: "#fcfcff" }}>
-        <AccountMenu />
+        <AccountMenu name="Amadeu" agency="0000" account="00000-0" />
         <CreditCard />
         <Loan />
         <Savings />
